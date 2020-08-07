@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="html기초 태그 연습">
+    <title>HTML 기초 태그</title>
+
+    <style>
+        .top {
+            background: red;
+            height: 100px;
+        }
+        .mid {
+            background: orange;
+            height: 100px;
+        }
+        .bot {
+            background: yellow;
+            height: 100px;
+        }
+        .span-red {
+            background: red;
+        }
+        .span-orange {
+            background: orange;
+        }
+        .span-yellow {
+            background: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 텍스트 관련 태그 -->
+    <h1>h1 태그</h1>
+    <h2>h2 태그</h2>
+    <h3>h3 태그</h3>
+    <h4>h4 태그</h4>
+    <h5>h5 태그</h5>
+    <h6>h6 태그</h6>
+
+    <b>굵은 글씨</b>
+    <i>기울은 글씨</i>
+    <p>문단 </p>
+
+    <!-- 미디어 관련 태그 -->
+    <img src="사진 주소" alt="">
+    <!-- controls는 재생버튼 생성 -->
+    <video src="비디오 주소" controls></video>
+
+    <!-- 링크 태그 -->
+    <a href="google.com">google</a>
+    <!-- target="_blank는 새창을 띄워서 지정된 주소로 이동  -->
+    <a href="fb.com" target="_blank">facebook</a>
+
+    <!-- 테이블 태그 -->
+    <table border="1">
+        <thead>
+            <!-- thead는 이 테이블의 column이 몇개인지 각 column의 이름이 뭔지 들어감 -->
+            <tr>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <body>
+                <!-- body에는 표의 내용이 들어간다 -->
+                <tr>
+                    <td>john Doe</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Hong gildong</td>
+                    <td>21</td>
+                </tr>
+            </body>
+        </thead>
+    </table>
+
+    <!-- 목록 태그 -->
+
+    <!-- ol태그는 리스트에 숫자가 들어간다 -->
+    <ol>
+        <li>john Doe</li>
+        <li>Hong gildong</li>
+    </ol>
+
+    <!-- ul태그는 리스트에 숫자가 들어가지 않는다 -->
+    <ul>
+        <li>john Doe</li>
+        <li>Hong gildong</li>
+    </ul>
+    
+    <!-- 구역을 나누는 태그 -->
+
+    <!-- div는 한줄 전체 공간을 차지한다 -->
+    <!-- div = block element -->
+    <div class="top">상단</div>
+    <div class="mid">중단</div>
+    <div class="bot">하단</div>
+
+    <!-- span은 자기 내용물 만큼의 공간만 차지 한다. -->
+    <!-- span = inline element -->
+    <span class="span-red">RED</span>
+    <span class="span-orange">ORANGE</span>
+    <span class="span-yellow">YELLOW</span>
+    
+    <!-- 인풋 태그 -->
+    <br>
+    텍스트      <input type="text">
+    <br>
+    체크박스    <input type="checkbox">
+    <br>
+    라디오      <input type="radio">
+    <br>
+    색상        <input type="color">
+    <br>
+    여러문장    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    드랍다운    <select name="" id="">
+                    <option value="옵션1">1번 옵션</option>
+                    <option value="옵션2">2번 옵션</option>
+                </select>
+
+
+    <br>
+    <!-- 예제) 로그인창 만들기 -->
+    <form>
+        <input type="email" placeholder="이메일">
+        <input type="password" placeholder="비밀번호">
+        <button type="submit">login</button>
+    </form>
+
+</body>
+</html>
